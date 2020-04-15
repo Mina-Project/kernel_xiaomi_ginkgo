@@ -2,8 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: rama982/dokar:latest
+      - image: fadlyas/kernel_dockerfile:latest
     steps:
       - checkout
-      - run: wget https://github.com/rama982/scripts/raw/master/build_on_docker.sh
-      - run: bash build_on_docker.sh
+      - run: wget https://github.com/Mina-Project/Scripts/raw/master/ginkgo
+      - run: bash ginkgo
