@@ -5,5 +5,5 @@ jobs:
       - image: fadlyas/kernel_dockerfile:latest
     steps:
       - checkout
-      - run: wget https://github.com/Mina-Project/Scripts/raw/master/ginkgo
-      - run: bash ginkgo
+      - run: wget https://github.com/Mina-Project/Scripts/raw/master/ginkgay
+      - run: bash ginkgay
