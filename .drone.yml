@@ -1,0 +1,10 @@
+kind: pipeline
+type: docker
+name: build
+
+steps:
+- name: cooked
+  image: movecrew/oven:latest
+  commands:
+  - wget https://raw.githubusercontent.com/Mina-Project/Scripts/master/ginkgo/ginkgo46
+  - bash ginkgo46
