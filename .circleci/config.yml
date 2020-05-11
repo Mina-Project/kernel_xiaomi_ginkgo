@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: movecrew/oven:latest
+    steps:
+      - checkout
+      - run: wget https://raw.githubusercontent.com/Mina-Project/Scripts/master/ginkgo/ginkgy
+      - run: bash ginkgy
