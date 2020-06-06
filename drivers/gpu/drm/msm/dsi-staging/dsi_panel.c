@@ -751,13 +751,7 @@ extern int sgm_brightness_set(uint16_t brightness);
 static int dsi_panel_update_backlight_externel(struct dsi_panel *panel,
 	u32 bl_lvl)
 {
-
 	pr_debug("backlight level :%d\n", bl_lvl);
-	if (bl_lvl > 0)
-		backlight_val = true;
-	else
-		backlight_val = false;
-
 	if (!panel || (bl_lvl > 0xffff)) {
 		pr_err("invalid params\n");
 		return -EINVAL;
